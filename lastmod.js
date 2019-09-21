@@ -10,5 +10,5 @@ var options = {
 
 document.getElementById('currentDate').innerHTML = new Date().toLocaleDateString('en-US', options);
 
-document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
+
 
