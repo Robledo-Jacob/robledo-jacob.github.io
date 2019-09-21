@@ -1,8 +1,39 @@
-h1,  h2,  h3,  h4,  h5,  h6  {
-    color:  #a6fcdc;
-     text-align: center;
-     padding: 10px;
-     font-family:'Galindo', Helvetica, serif;
-     font-size: 2em;
-     line-height: 1.1em;
-   } 
+ h1{
+  color: black;
+   text-align: center;
+   padding: 20px;
+   font-family:'Galindo', Helvetica, serif;
+   background-color:red;
+   border-radius:5px;
+ } 
+
+.body{
+background-color:#8A8D8F;
+
+height:250px;
+}
+
+footer{
+background-color:red;
+text-align: center;
+padding: 10px;
+font-family:'Galindo', Helvetica, bold;
+background-color:red;
+border-radius:5px;
+
+}
+
+img{
+ width:300px;
+float:right;
+}
+
+.li{
+color:white; 
+list-style-type: none;
+
+}
+
+script{
+color:black;
+}
