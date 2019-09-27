@@ -1,0 +1,27 @@
+@media only screen and (min-width:32.5em){
+
+  header img{
+    width:150px;
+  }
+  header{
+    background-color:green;
+    text-align: center;
+    padding:.5rem;
+    color:red;
+  }
+  
+  h1{
+  font-size:2.5rem;
+  }
+
+  .headertext{
+    margin-left:4rem;
+  }
+
+
+
+}
+
+
+
+

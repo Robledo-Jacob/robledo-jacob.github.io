@@ -1,0 +1,41 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  line-height:1;
+}
+
+body{
+  font-size:16px;
+  font-family:
+}
+
+header{
+  background-color:yellow;
+  text-align:center;
+  padding:,5rem;
+  color:;
+}
+
+header img{
+  display:inline-block;
+  width:75px;
+  height:auto;
+  vertival-align:middle
+  
+}
+
+.headertext{
+  margin-left:.5rem;
+  display:inline-block;
+  vertical-align:middle;
+  
+}
+
+h1{
+  font-size:40px ;
+  color:blue;
+  font-stlye:;
+    
+}
+
