@@ -1,7 +1,7 @@
 var options = {
-    weekday: 'long', 
-    day: 'numeric', 
-    month: 'long', 
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
     year: 'numeric',
     hour: 'numeric',
     minute: 'numeric',
@@ -9,6 +9,3 @@ var options = {
 }
 
 document.getElementById('currentDate').innerHTML = new Date().toLocaleDateString('en-US', options);
-
-
-
