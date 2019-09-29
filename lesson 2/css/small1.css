@@ -3,15 +3,19 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
 
+
 }
 
 article {
   border: 1px solid;
   box-shadow: 2px 2px 5px 0px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
 article img {
+
 
   max-width: 100%;
   display: block;
@@ -25,9 +29,10 @@ article,
 h3,
 h4,
 h5 {
-  max-width: 100%;
+  max-width: 1500px;
   display: block;
   text-align: center;
+  justify-content: center;
 
 }
 
@@ -106,7 +111,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.rem;
+  font-size: 1.5rem;
   color: black;
   font-family: 'Lexend Deca', sans-serif;
   text-align: center;
