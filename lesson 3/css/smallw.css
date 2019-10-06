@@ -3,13 +3,24 @@
 font-family: 'Questrial', sans-serif;
 font-family: 'Lexend Deca', sans-serif;
 */
-
-li a {
+.logo {
+  position:relative;
+  top:20px;
+  left:20px;
+  width: 150px;
+  
+  
+  
+  
+  }
+  
+  
+  li a {
   color: white;
   padding:1em 1em;
   text-decoration: none;
   
- 
+  
   }
   nav ul {
     margin:0;
