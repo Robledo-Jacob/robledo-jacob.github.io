@@ -1,72 +1,71 @@
 @media only screen and (min-width: 32.5em) {
-    .grid {
-      padding: 10px;
-      display: flex;
-      grid-gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  
-      max-width: 1500px;
-      margin: 0 auto;
-    }
-  
-    .navigation {
-      display: flex;
-    }
-  
-    .navigation li:first-child {
-      display: none;
-    }
-  
-    .navigation li {
-      display: block;
-      flex: 1 1 100%;
-    }
-  
-    .navigation li a {
-      color: white;
-      font-size: 30px;
-    }
-  
-    article {
-      float: center;
-      display: flex;
-    }
-  
-    header img {
-      width: 850px;
-    }
-    header {
-      padding: 2rem;
-  
-      border-radius: 10px;
-    }
-  
-    h1 {
-      font-size: 2.5rem;
-    }
-    h2 {
-      font-size: 2rem;
-    }
-  
-    h3 {
-      font-size: 2rem;
-      color: white;
-      font-family: "Lexend Deca", sans-serif;
-      text-align: center;
-    }
-  
-    h4 {
-      font-size: 1.8rem;
-      color: white;
-      font-family: "Lexend Deca", sans-serif;
-      text-align: center;
-    }
-  
-    h5 {
-      font-size: 1.2rem;
-      color: white;
-      font-family: "Lexend Deca", sans-serif;
-      text-align: center;
-    }
+  .grid {
+    padding: 10px;
+    display: flex;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    max-width: 1500px;
+    margin: 0 auto;
   }
-  
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation li a {
+    color: white;
+    font-size: 30px;
+  }
+
+  article {
+    float: center;
+    display: flex;
+  }
+
+  header img {
+    width: 850px;
+  }
+  header {
+    padding: 2rem;
+
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+  }
+}
