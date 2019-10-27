@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 37.5em) {
   .grid {
     padding: 10px;
     display: flex;
@@ -27,14 +27,72 @@
     font-size: 30px;
   }
 
-  article {
-    float: center;
-    display: flex;
-  }
+  
+.icon img{
+width:auto;
+height:auto;
+display:flex;
 
-  header img {
-    width: 850px;
-  }
+}
+
+  .hide{
+  display:block;
+  
+}
+  
+  
+  .img{
+  float:right;
+  width:100%;
+  padding:auto;
+  margin:auto;
+  display:block;
+  
+}
+  
+  
+  .li {
+  text-decoration: none;
+  text-align: left;
+   position:right;
+  padding:30px;
+}
+  
+  
+  
+  .weathersum {
+  position: absolute;
+  top: 90px;
+  left: 350px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  border:1.5px solid white;
+  padding:1rem;
+  box-shadow: 0 0 5px white;
+  text-align: left;
+  width:210px;
+  height:auto;
+  display:block;
+
+}
+
+  
+  
+article , .weather{
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  margin: 20px;
+  padding: 40px;
+  width: auto;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 100px;
+  
+}
+
+  
+  
+  
   header {
     padding: 2rem;
 
