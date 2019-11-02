@@ -28,3 +28,5 @@ imgObserver)=>{
 images.forEach(image => {
   imgObserver.observe(image);
 })
+
+
