@@ -18,7 +18,7 @@ offline_data = {
         },
         {
             name: "Preston",
-            photo: "clouds-cloudy-sky-daylight-1034887.jpg",
+            photo: "https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fbright-clouds-cold-618833.jpg?1572711479658",
             motto: "Home of Napoleon Dynamite.",
             yearFounded: 1866,
             currentPopulation: 5204,
@@ -31,7 +31,7 @@ offline_data = {
         },
         {
             name: "Soda Springs",
-            photo: "clouds-daylight-environment-1374295.jpg",
+            photo: "https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fclouds-daylight-environment-1374295.jpg?1572711614435",
             motto: "Historic Oregon Trail Oasis. The Soda is on Us.",
             yearFounded: 1858,
             currentPopulation: 2985,
