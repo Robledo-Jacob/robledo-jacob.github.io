@@ -4,7 +4,7 @@ const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
 offline_data = {
     towns: [{
             name: "Fish Haven",
-            photo: "bright-clouds-cold-618833.jpg",
+            photo: "https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fpexels-photo-210557.jpeg?1571507509279",
             motto: "This is Fish Heaven.",
             yearFounded: 1864,
             currentPopulation: 501,
