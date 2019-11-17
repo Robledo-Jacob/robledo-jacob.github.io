@@ -120,9 +120,9 @@ function create_cards(json_object) {
 
         let img = document.createElement("img");
         if (towns[i].hasOwnProperty("photo")) {
-            img.setAttribute("src", "image" + towns[i].photo);
+            img.setAttribute("src", "image/" + towns[i].photo);
         } else {
-            img.setAttribute("src", "image" + offline_data['towns'][i].photo);
+            img.setAttribute("src", "image/" + offline_data['towns'][i].photo);
         }
         img.setAttribute("alt", town_name);
         card.appendChild(img);
