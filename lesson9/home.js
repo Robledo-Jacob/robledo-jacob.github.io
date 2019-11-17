@@ -29,6 +29,6 @@ fetch(requestURL)
       card.appendChild(image);
       image.setAttribute('src', 'image/' + towns[i].photo);
       image.setAttribute('alt', towns[i].name); 
-      document.querySelector('div.card').appendChild(card);}
+      document.querySelector('div.pics').appendChild(card);}
 }
 });
