@@ -327,7 +327,12 @@ input{
 
 
 /*HOME PAGE DATA*/
+.pics1 {
 
+  padding:20px;
+  text-align:center;
+     width: 100%;
+  }
 
 .pics {
   display: grid;
