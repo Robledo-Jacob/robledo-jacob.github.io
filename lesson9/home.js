@@ -120,14 +120,14 @@ function create_cards(json_object) {
 
         let img = document.createElement("img");
         if (towns[i].hasOwnProperty("photo")) {
-            img.setAttribute("src", "lesson9/img/" + towns[i].photo);
+            img.setAttribute("src", "assets" + towns[i].photo);
         } else {
-            img.setAttribute("src", "lesson9/img/" + offline_data['towns'][i].photo);
+            img.setAttribute("src", "assets" + offline_data['towns'][i].photo);
         }
         img.setAttribute("alt", town_name);
         card.appendChild(img);
 
-        document.querySelector("div.cards").appendChild(card);
+        document.querySelector("div.pics").appendChild(card);
     }
 }
 
