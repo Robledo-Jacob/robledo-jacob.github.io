@@ -27,7 +27,7 @@ fetch(requestURL)
       span.appendChild(population);
       span.appendChild(rain);
       card.appendChild(image);
-      image.setAttribute('src', 'images/' + towns[i].photo);
+      image.setAttribute('src', 'image/' + towns[i].photo);
       image.setAttribute('alt', towns[i].name); 
       document.querySelector('div.card').appendChild(card);}
 }
