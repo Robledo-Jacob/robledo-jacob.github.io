@@ -1,34 +1,145 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-fetch(requestURL)
-.then(function (response) {
-  return response.json();
-})
-.then(function (jsonObject) {
-  const towns = jsonObject["pics"];
-  for (let i = 0; i < towns.length; i++) {
-      if (towns[i].name === "Fish Haven" || towns[i].name === "Preston" ||  towns[i].name ==="Soda Springs"){
-      let card = document.createElement("section");
-      let span = document.createElement("span");
-      let h4 = document.createElement("h4");
-      let motto = document.createElement("i");
-      let year = document.createElement("p");
-      let population = document.createElement("p");
-      let rain = document.createElement("p");
-      let image = document.createElement("img");
-      h4.textContent = towns[i].name;
-      motto.textContent = towns[i].motto;
-      year.textContent = 'Year Founded: ' + towns[i].yearFounded;
-      population.textContent = 'Population: ' + towns[i].currentPopulation;
-      rain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-      card.appendChild(span);
-      span.appendChild(h4);
-      span.appendChild(motto);
-      span.appendChild(year);
-      span.appendChild(population);
-      span.appendChild(rain);
-      card.appendChild(image);
-      image.setAttribute('src', 'image/' + towns[i].photo);
-      image.setAttribute('alt', towns[i].name); 
-      document.querySelector('div.pics').appendChild(card);}
+const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
+//const request_url = "https://splucena.github.io/lesson9/weather/towndata.json";
+
+offline_data = {
+    towns: [{
+            name: "Fish Haven",
+            photo: "bright-clouds-cold-618833.jpg",
+            motto: "This is Fish Heaven.",
+            yearFounded: 1864,
+            currentPopulation: 501,
+            averageRainfall: 14.2,
+            events: [
+                "April 1: How Big Was That Fish Day",
+                "May 15-30: Rush the Creek Days",
+                "July 24: Bear Lake Blunder Run",
+                "December 12: Light the Tree"
+            ]
+        },
+        {
+            name: "Preston",
+            photo: "https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fbright-clouds-cold-618833.jpg?1572711479658",
+            motto: "Home of Napoleon Dynamite.",
+            yearFounded: 1866,
+            currentPopulation: 5204,
+            averageRainfall: 16.65,
+            events: [
+                "March 29: Work Creek Revival",
+                "July 8-12: Napoleon Dynamite Festival",
+                "November 2-4: Freedom Days"
+            ]
+        },
+        {
+            name: "Soda Springs",
+            photo: "https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fclouds-daylight-environment-1374295.jpg?1572711614435",
+            motto: "Historic Oregon Trail Oasis. The Soda is on Us.",
+            yearFounded: 1858,
+            currentPopulation: 2985,
+            averageRainfall: 15.75,
+            events: [
+                "February 29: Geyser Song Day",
+                "May 1-6: Days of May Celebration",
+                "October 15-16: Octoberfest"
+            ]
+        }
+    ]
+};
+
+function create_cards(json_object) {
+    let accepted_towns = ["Preston", "Soda Springs", "Fish Haven"];
+    let towns = json_object["towns"].filter(town => {
+        return accepted_towns.includes(town.name);
+    });
+
+    let town_names = [];
+    towns.forEach(element => {
+        town_names.push(element.name);
+    });
+
+    if (!town_names.includes("Preston")) {
+        towns.splice(1, 0, offline_data['towns'][1]);
+    }
+
+    if (!town_names.includes("Fish Haven")) {
+        towns.splice(0, 0, offline_data['towns'][0]);
+    }
+
+    if (!town_names.includes("Soda Springs")) {
+        towns.splice(2, 0, offline_data['towns'][2]);
+    }
+
+    for (let i = 0; i < towns.length; i++) {
+        let card = document.createElement("section");
+        let h2 = document.createElement("h2");
+
+        let town_name;
+        if (towns[i].hasOwnProperty("name")) {
+            town_name = towns[i].name;
+            h2.textContent = town_name;
+        } else {
+            town_name = offline_data['towns'][i].name;
+            h2.textContent = town_name;
+        }
+        card.appendChild(h2);
+
+        let motto = document.createElement("p");
+        if (towns[i].hasOwnProperty("motto")) {
+            motto.textContent = towns[i].motto;
+        } else {
+            motto.textContent = offline_data['towns'][i].motto;
+        }
+        motto.setAttribute("class", "motto");
+        card.appendChild(motto);
+
+        let year_founded = document.createElement("p");
+        if (towns[i].hasOwnProperty("yearFounded")) {
+            year_founded.textContent = "Year Founded: " + towns[i].yearFounded;
+        } else {
+            year_founded.textContent = "Year Founded: " + offline_data['towns'][i].yearFounded;
+        }
+        card.appendChild(year_founded);
+
+        let population = document.createElement("p");
+        if (towns[i].hasOwnProperty("currentPopulation")) {
+            population.textContent = "Population: " + towns[i].currentPopulation;
+        } else {
+            population.textContent =
+                "Population: " + offline_data['towns'][i].currentPopulation;
+        }
+        card.appendChild(population);
+
+        let average_rainfall = document.createElement("p");
+        if (towns[i].hasOwnProperty("averageRainfall")) {
+            average_rainfall.textContent =
+                "Annual Rainfall: " + towns[i].averageRainfall;
+        } else {
+            average_rainfall.textContent =
+                "Annual Rainfall: " + offline_data['towns'][i].averageRainfall;
+        }
+        card.appendChild(average_rainfall);
+
+        let img = document.createElement("img");
+        if (towns[i].hasOwnProperty("photo")) {
+            img.setAttribute("src", 'image/' + towns[i].photo);
+        } else {
+            img.setAttribute("src", 'image/' + offline_data['towns'][i].photo);
+        }
+        img.setAttribute("alt", town_name);
+        card.appendChild(img);
+
+        document.querySelector("div.pics").appendChild(card);
+    }
 }
-});
+
+fetch(request_url)
+    .then(response => {
+        if (!response.ok) {
+            return offline_data;
+        }
+
+        return response.json();
+    })
+    .then(json_object => {
+        create_cards(json_object);
+    })
+    .catch(error => console.log(JSON.parse(error)));
