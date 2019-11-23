@@ -1,0 +1,129 @@
+@media only screen and (min-width: 37.5em) {
+  .grid {
+    padding: 10px;
+    display: flex;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation li a {
+    color: white;
+    font-size: 30px;
+  }
+
+  
+.icon img{
+width:auto;
+height:auto;
+display:flex;
+
+}
+
+  .hide{
+  display:block;
+  
+}
+  
+  
+  .img{
+  float:right;
+  width:100%;
+  padding:auto;
+  margin:auto;
+  display:block;
+  
+}
+  
+  
+  .li {
+  text-decoration: none;
+  text-align: left;
+   position:right;
+  padding:30px;
+}
+  
+  
+  
+  .weathersum {
+  position: absolute;
+  top: 90px;
+  left: 350px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  border:1.5px solid white;
+  padding:1rem;
+  box-shadow: 0 0 5px white;
+  text-align: left;
+  width:210px;
+  height:auto;
+  display:block;
+
+}
+
+  
+  
+article , .weather{
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  margin: 20px;
+  padding: 40px;
+  width: auto;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 100px;
+  
+}
+
+  
+  
+  
+  header {
+    padding: 2rem;
+
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+  }
+}
