@@ -40,6 +40,13 @@ display:flex;
   
 }
   
+.gallery-images {
+  grid-template-columns: 1fr 1fr 1fr;
+  min-width:400px;
+  min-height:300px;
+}
+
+
   
   .img{
   float:right;
