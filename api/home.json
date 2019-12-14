@@ -1,7 +1,7 @@
 {
     "towns" : [
     {
-      "name": "Test",
+      "name": "Franklin",
       "photo": "franklin.jpg",
       "motto": "Where you will grow!",
       "yearFounded": 1788,
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "name": "Test",
+      "name": "Greenville",
       "photo": "greenville.jpg",
       "motto": "Green is our way of life.",
       "yearFounded": 1805,
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "name": "Preston",
+      "name": "Test",
       "photo": "preston.jpg",
       "motto": "Home of Napoleon Dynamite.",
       "yearFounded": 1866,
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "name": "Springfield",
+      "name": "Test",
       "photo": "springfield.jpg",
       "motto": "Where everyone is lifted.",
       "yearFounded": 1826,
