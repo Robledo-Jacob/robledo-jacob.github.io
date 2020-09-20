@@ -12,6 +12,13 @@
  font-size:3em;
 } 
 
+.body{
+  background-color:#8A8D8F;
+  border-radius:5px;
+  height:250px;
+  max-width: 800px;
+  margin:auto;
+  }
 
 img{
        
