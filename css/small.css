@@ -1,3 +1,18 @@
+
+.grid { 
+	display: flex;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+
+  }
+  article{
+    border: 1px solid;
+    box-shadow:2px 2px 5px 0px;
+    margin-left:auto;
+    margin-right:auto;
+  
+  }
+
 h1{
   color: #8A8D8F;
    text-align: center;
@@ -16,7 +31,8 @@ h2{
 background-color:#8A8D8F;
 border-radius:5px;
 height:250px;
-margin:1px;
+max-width: 800px;
+margin:auto;
 }
 
 footer{
@@ -32,6 +48,9 @@ img{
  width:200px;
 float:right;
 box-shadow: 3px 3px 5px black;
+position: relative;
+bottom:150px;
+margin:15px;
 }
 
 .li{
@@ -40,3 +59,11 @@ list-style-type: none;
 
 }
 
+main a {
+  color: #061f8c;
+  line-height: 2;
+}
+
+main a:hover {
+  color: rgb(40, 40, 49);
+}
