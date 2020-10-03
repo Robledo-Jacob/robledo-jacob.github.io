@@ -57,7 +57,7 @@ font-family: 'Lexend Deca', sans-serif;
     width:auto;
     background: rgba(255, 255, 255, 0.40);
     border-radius:100px;
-    text-align:center;
+    
     
   }
   .grid { 
@@ -66,21 +66,33 @@ font-family: 'Lexend Deca', sans-serif;
     font-size: 0.8rem;
     }
   
+  /*list*/
+ol{
+  display:inline-block;
+  text-align:left;
+}
+
+/*table td*/
   
-  
+td, th{
+   text-align: left;
+    padding: 8px;
+  display: block;
+}
+
+
   article{  
     margin-left:auto;
     margin-right:auto;
   
   }
   
-  article img{
+img{
       
     border-radius:40px;
     max-width:100%;
     display:block;
-    margin-left:auto;
-    margin-right:auto;
+   
   }
   
   
@@ -88,7 +100,7 @@ font-family: 'Lexend Deca', sans-serif;
   article, h3 ,h4 ,h5{
     max-width:1500px;
     display:block;
-    text-align:center;
+  
     justify-content: center;
     
   
@@ -97,8 +109,9 @@ font-family: 'Lexend Deca', sans-serif;
   body{
     font-size:16px;
   background: rgb(0,48,163);
-  background: linear-gradient(180deg, rgba(0,48,163,1) 0%, rgba(0,106,255,1) 53%, rgba(106,255,255,1) 100%);
+  background: linear-gradient(180deg, rgba(0,48,163,1) 0%, rgba(0,106,255,1) 53%, rgba(0,0,0,100) 100%);
   font-family: 'Lato', sans-serif;
+    
     
   }
   
@@ -121,13 +134,17 @@ font-family: 'Lexend Deca', sans-serif;
   footer {
       text-align: center;
       background-color: #ffffff;
-      font-family: 'Lexend Deca', sans-serif;
+      font-family: 'Lato', sans-serif;
       background: rgba(255, 255, 255, 0.45);
     
   }
   
   
-  
+p{
+  color:white;
+   font-family: 'Lato', sans-serif;
+  padding:20px;
+}
   
   h1{
     font-size: 1.8rem;
@@ -142,7 +159,8 @@ font-family: 'Lexend Deca', sans-serif;
     font-size: 1rem;
     color:white;
     font-family: 'Questrial', sans-serif;
-    text-align:center; 
+    text-align:left; 
+    padding:15px;
   }
   
   
@@ -170,3 +188,5 @@ font-family: 'Lexend Deca', sans-serif;
   }
   
   
+
+/*colors*/
