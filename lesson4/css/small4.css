@@ -12,7 +12,7 @@ font-family: 'Lexend Deca', sans-serif;
 
 .grid { 
 	display: flex;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
 	font-size: 0.8rem;
 
   }
