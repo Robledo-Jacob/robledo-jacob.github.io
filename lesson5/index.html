@@ -45,8 +45,8 @@
             <div class="herodiv">
                 <!--Image with box over -->
                 <div class="hero-ph">
-                    <img
-                        src="https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fpexels-photo-164250.jpeg?1571507312295" />
+                    <img class="img"
+                    src="image/sunset-3325080_1280.jpg" />
                 </div>
                 <section class="weathersum">
                     <h2>
@@ -81,16 +81,17 @@
                                 <th>Thu</th>
                             </tr>
                             <tr class="icon">
-                                <td><img src="https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fll.png?1570335104397"
-                                        alt="sunny day"></td>
-                                <td><img src="https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fll.png?1570335104397"
-                                        alt="sunny day"></td>
-                                <td><img src="https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fll.png?1570335104397"
-                                        alt="sunny day"></td>
-                                <td><img src="https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fll.png?1570335104397"
-                                        alt="sunny day"></td>
-                                <td><img src="https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fll.png?1570335104397"
-                                        alt="sunny day"></td>
+                                <td><img src="image/icon.png"
+                                    alt="sunny day"></td>
+                            <td><img src="image/icon.png"
+                                    alt="sunny day"></td>
+                            <td><img src="image/icon.png"
+                                    alt="sunny day"></td>
+                            <td><img src="image/icon.png"
+                                    alt="sunny day"></td>
+                            <td><img src="image/icon.png"
+                                    alt="sunny day"></td>
+
 
                             </tr>
 
@@ -123,7 +124,7 @@
         <article>
             <div>
                 <img class="img"
-                    src="https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fpexels-photo-210557.jpeg?1571507509279">
+                    src="image/landscape-4461904_1280.jpg">
 
                 <p>
                     There is an event that the town will throw for any dog owner at the Down Town Park, everyone is
@@ -141,11 +142,15 @@
             </h4>
             <article>
                 <section class="hide">
-                    <div>
-                        <iframe id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=Preston%2C%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
-                            href="https://www.embedgooglemap.net"></a>
-                    </div>
+                    <div class="google-maps">
+                        <!-- Height=450px; Width=600px -->
+                        <iframe
+                          src="https://maps.google.com/maps?q=Preston%2C%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                          width="600"
+                          height="450"
+                          frameborder="0"
+                          style="border:0"
+                        ></iframe>
                 </section>
 
                 <div>
@@ -177,12 +182,12 @@
         </main>
     </main>
     <footer>
-        <p>
+        <p class="footer">
             &copy;2020|Jacob Robledo|Utah|
             <a href="https://www.byui.edu/online"> BYUI Online Learning|</a>
             <a href="https://robledo-jacob.github.io/lesson%201/"> My Portal Page</a>
         </p>
-        <p>This Document was Last modified on:<span id="currentDate"></span></p>
+        <p class="footer">This Document was Last modified on:<span id="currentDate"></span></p>
         <script src="toggle4.js"></script>
     </footer>
 </body>
