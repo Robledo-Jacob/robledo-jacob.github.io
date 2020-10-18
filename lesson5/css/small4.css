@@ -10,18 +10,7 @@ font-family: 'Lexend Deca', sans-serif;
   width: 150px;
 }
 
-button{
-  margin-left:auto;
-  margin-right:auto;
-  color: white;
-  margin: 20px;
-  padding: 20px;
-  width: auto;
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 100px;
-  text-align: center;
-  
-  }
+
 
 /*Nav bar*/
 nav {
@@ -210,7 +199,8 @@ h5 {
 .herodiv {
   margine: 20px auto;
   position: relative;
-  height: auto;
+  height: 350px;
+  margin:20px;
   width: auto;
   display: flex;
 }

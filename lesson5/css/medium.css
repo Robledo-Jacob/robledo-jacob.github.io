@@ -6,6 +6,14 @@
         grid-template-columns: 1fr 1fr;
     }
   
+    .herodiv {
+      margine: 20px auto;
+      position: relative;
+      height: auto;
+      margin:20px;
+      width: auto;
+      display: flex;
+    }
   .pics {
   display: grid;
   grid-template-columns: 1fr 1fr;

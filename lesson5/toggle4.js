@@ -14,6 +14,16 @@ var options = {
 
 document.getElementById('currentDate').innerHTML = new Date().toLocaleDateString('en-US', options);
 
+// shows announcment if Friday
+day = new Date().getDay();
+let announcement = document.getElementById("announcment");
+
+if (day == 5) {
+    announcement.style.display = "block";
+}
+else {
+    announcement.style.display = "none";
+}
 
 function myFunction() {
     var d = new Date();

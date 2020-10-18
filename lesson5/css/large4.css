@@ -17,18 +17,7 @@
   grid-column-gap: 5px;
   grid-row-gap: 10px;
 }
-button{
-margin-left:auto;
-margin-right:auto;
-color: white;
-margin: 20px;
-padding: 20px;
-width: auto;
-background: rgba(255, 255, 255, 0.4);
-border-radius: 100px;
-text-align: center;
 
-}
   .navigation {
     display: flex;
   }
@@ -86,7 +75,15 @@ text-align: center;
   padding: 10px;
   display: flex;
 }
-  
+.herodiv {
+  margine: 20px auto;
+  position: relative;
+  height: auto;
+  margin:20px;
+  width: auto;
+  display: flex;
+}
+
   .weathersum {
     float: center;
     position: center;
