@@ -10,7 +10,14 @@
   }
   
  
-  
+  #announcment {
+    padding: .75em;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.363);
+    font-family: 'Montserrat', sans-serif;
+}
+
   .pics {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
