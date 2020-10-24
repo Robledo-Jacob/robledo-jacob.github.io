@@ -9,7 +9,7 @@
     <link href="css/medium.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css">
      <link href="https://fonts.googleapis.com/css?family=Lato|Questrial&display=swap" rel="stylesheet">
-
+     <link rel="shortcut icon" href="favicon.ico" />
     <title>Preston Town</title>
   </head>
   <aside id="announcment">Saturday = Preston Pancakes in the Park!
@@ -18,7 +18,7 @@
   
   <body> 
     <div>
-      <img class ="logo" src ="https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fll.png?1570335104397">
+      <img class ="logo" src ="image/icon.png">
     </div>
     
     <h1>Smart Weather</h1>
@@ -28,7 +28,7 @@
             <ul class="navigation">
               <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
               <li><a href="index.html">Home</a></li>
-              <li><a href="preston-5.html">Preston</a></li>
+              <li><a href="preston-6.html">Preston</a></li>
               <li><a href="sodaspring-town.html"> Soda Springs </a></li>
               <li><a href="fish-town.html">Fish Haven</a></li>
               <li><a href="storm-center.html">Storm Center</a></li>
@@ -44,26 +44,57 @@
       <h3>
           Your Weather for Today
       </h3>
-
       <article>
-          <div class="herodiv">
-              <!--Image with box over -->
-              <div class="hero-ph">
-                  <img class="img"
-                      src="image/sunset-3325080_1280.jpg" />
-              </div>
-              <section class="weathersum">
-                  <h2>
-                      Weather Summary
-                  </h2>
-                  <p>Current Temperature: 69 F</p>
-                  <p>High: 70 F</p>
-                  <p>Low: 42 F</p>
-                  <p>Wind Chill: 65 F</p>
-                  <p>Chance of Precipitation: 20%</p>
-              </section>
+        <div class="herodiv">
+          <!--Image with box over -->
+          <div class="hero-ph">
+               <picture >
+         
+                  
+            	<source media="(min-width: 64em)"
+                	    srcset="image/larrge.png">
+	            <source  media="(min-width: 37.5em)"
+    	                srcset="image/med.png">
+        	    <source   media="(max-width: 35em)"
+            	        srcset="image/small.png">
+				<img class="img" src="image/sunset-3325080_1280.jpg" alt="sunny park preston">
+			</picture>
           </div>
+          <section class="weathersum">
+            <h3 class="text-align-center">Weather Summary</h3>
+            <div>
+              <table>
+                <tbody class="ans" >
+                    <tr >
+                      <td class="lans"> Currently:</td>
+                      <td><span id="currently"></span></td>
+                    </tr>
+                    <tr>
+                      <td class="lans">High:</td>
+                      <td><span id="temperature"></span> &#8457;</td>
+                    </tr>
+                    <tr>
+                      <td class="lans">Wind Chill:</td>
+                      <td>
+                        <span id="wind_chill"></span
+                        ><span id="wind_chill_attribute"> &#8457;</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="lans">Humidity:</td>
+                      <td><span id="humidity"></span></td>
+                    </tr>
+                    <tr>
+                      <td class="lans">Wind Speed:</td>
+                      <td><span id="wind_speed"></span> mph</td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
       </article>
+
       <section class="hide">
           <h3>
               5 Day Forecast Placeholder
@@ -185,13 +216,14 @@
       </main>
   </main>
 
-    <footer>
-      <p class="footer">
-        &copy;2020|Jacob Robledo|Utah|
-        <a href="https://www.byui.edu/online"> BYUI Online Learning </a>
-      </p>
-      <p class="footer">This Document was Last modified on:<span id="currentDate"></span></p>
-      <script src="js/toggle4.js"></script>
-    </footer>
+  <footer>
+    <p  class="footer">
+      &copy;2020|Jacob Robledo|Utah|
+      <a href="https://www.byui.edu/online"> BYUI Online Learning </a>
+    </p>
+    <p  class="footer">This Document was Last modified on:<span id="currentDate"></span></p>
+    <script src="js/toggle4.js"></script>
+    <script src="js/weather-preston.js"></script>
+  </footer>
   </body>
 </html>
