@@ -196,7 +196,7 @@ h5 {
 /*Transparent box over image*/
 
 .hero-ph {
-  margine: 10px;
+  margin: 10px;
   border-radius: 50px;
   height: auto;
   width: 100%;
@@ -205,7 +205,7 @@ h5 {
 }
 
 .herodiv {
-  margine: 20px auto;
+  margin: 20px auto;
   position: relative;
   height: 350px;
   margin: 20px;
