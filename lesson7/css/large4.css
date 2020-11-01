@@ -54,15 +54,19 @@
   }
 
   .gallery-images {
+    position: relative;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     min-width:400px;
     min-height:300px;
-    transition: box-shadow .3s;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
   }
 
   .picture-container:hover {
     box-shadow: 0 0 30px rgba(33,33,33,1); 
   }
+  
   .picture-container {
     position: relative;
     width: 100%;
