@@ -37,8 +37,7 @@
   </nav>
 </header>
 
-
-
+<body>
 <h3>
   Storm Center
 </h3>
@@ -55,13 +54,14 @@
           <input type="fullname" required name="fullname" placeholder="Your full name" pattern="[A-Za-z]+" /></label>
         <label for="email">
           Email
-          <input type="email" required name="email" placeholder="your@email.com" /></label>
+          <input type="email" required name="email" placeholder="your@email.com" id="email" /></label>
 
         <label for="phone_number">
           Phone Number
-          <input type="phone_number" required ="phone_number" placeholder="Enter Phone Number"/></label>
+          <input type="phone_number" required="phone_number" placeholder="Enter Phone Number" id="phone_number"/></label>
 
-        <label for="zip">Zip code <input type="number" required ="zip" placeholder="Enter your Zip code" id="zip"/></label>
+        <label for="zip">Zip code <input type="number" required="zip" placeholder="Enter your Zip code"
+            id="zip" /></label>
       </article>
 
 
@@ -154,7 +154,8 @@
     <script src="js/toggle4.js"></script>
     <script src="js/windchill.js"></script>
   </footer>
-  </body>
-</div>
+
+ </div>
+</body>
 
 </html>
