@@ -55,10 +55,10 @@
               >Full Name
               <input
                 type="text"
-                name="fullname"
+                required name="fullname"
                 minlength="5"
                 pattern="[A-Za-z ]+"
-                required
+               
             /></label>
             <label for="email">
               Email
@@ -71,7 +71,7 @@
             /></label>
   
             <label for="zip"
-              >Zip code <input type="number" name="zip" id="zip" reqired
+              >Zip code <input type="number" required name="zip" id="zip" pattern="[0-9]+"
             /></label>
           </article>
   
