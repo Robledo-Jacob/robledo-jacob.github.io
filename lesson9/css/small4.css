@@ -105,14 +105,11 @@ nav {
 body {
   font-size: 16px;
   background: rgb(0, 48, 163);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 48, 163, 1) 0%,
-    rgba(0, 106, 255, 1) 53%,
-    rgba(106, 255, 255, 1) 100%
-  );
-  font-family: "Lato", sans-serif;
+  background: linear-gradient(180deg, rgba(0, 48, 163, 1) 0%, rgba(0, 106, 255, 1) 53%, rgba(0, 0, 0, 100) 100%);
+  font-family: 'Lato', sans-serif;
+
 }
+
 
 article {
   margin-left: auto;
@@ -189,7 +186,7 @@ h5 {
 /*Transparent box over image*/
 
 .hero-ph {
-  margine: 10px;
+  margin: 10px;
   border-radius: 50px;
   height: auto;
   width: 100%;
@@ -198,16 +195,17 @@ h5 {
 }
 
 .herodiv {
-  margine: 20px auto;
+  margin: 20px auto;
   position: relative;
-  height: auto;
+  height: 350px;
+  margin: 20px;
   width: auto;
   display: flex;
 }
 
 .weathersum {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.363);
   border-radius: 50px;
   border: 1.5px solid white;
   padding: 1rem;
@@ -216,7 +214,19 @@ h5 {
   width: auto;
   height: auto;
   display: center;
-  margin: -6% 0 -6%;
+  margin: block;
+}
+.ans{
+  text-align: right;
+}
+
+p {
+  font-size: .5rem;
+  color: white;
+  font-family: "Questrial", sans-serif;
+  text-align: left;
+  margin: 10px;
+  line-height: 1.6rem;
 }
 
 .icon img {
@@ -246,10 +256,22 @@ h5 {
 
 /*Section 2*/
 
-gmap_canvas {
-  height: 500px;
-  width: 100%;
+.google-maps {
+  position: relative;
+  padding-bottom: 50%;
+  height: 25%;
+  overflow: hidden;
 }
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50px;
+}
+
 
 .li {
   text-decoration: none;
@@ -261,17 +283,16 @@ gmap_canvas {
 /*Footer*/
 
 footer {
-  margin: 3rem auto;
-  padding: 1rem;
-  max-width: 1500px;
-  border-radius: 100px 100px;
-}
-
-footer {
   text-align: center;
   background-color: #ffffff;
   font-family: "Lexend Deca", sans-serif;
   background: rgba(255, 255, 255, 0.45);
+}
+
+.footer {
+  text-align: center;
+
+  font-family: "Lexend Deca", sans-serif;
 }
 
 /*Storm*/
@@ -329,11 +350,10 @@ input{
 /*HOME PAGE DATA*/
 .pics1 {
 
-  padding:20px;
-  text-align:center;
-     width: 100%;
-  }
-
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
 .pics {
   display: grid;
   grid-template-columns: 1fr;
@@ -345,9 +365,9 @@ input{
   width: 100%;
   height: auto;
   text-align: center;
- background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.45);
 
-  border-radius:25px;
+  border-radius: 25px;
   font-family: "Roboto", sans-serif;
 }
 

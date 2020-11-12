@@ -9,7 +9,13 @@
     margin: 0 auto;
   }
   
-  
+  #announcment {
+    padding: .75em;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.363);
+    font-family: 'Montserrat', sans-serif;
+}
   
   .pics {
   display: grid;
@@ -68,11 +74,29 @@
     padding: 30px;
   }
 
+  .hero-ph {
+    margin: 10px;
+    border-radius: 50px;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+  }
+
+  .herodiv {
+    margin: 20px auto;
+    position: relative;
+    height: auto;
+    margin:20px;
+    width: auto;
+    display: flex;
+  }
+  
   .weathersum {
-    position: absolute;
-    top: 90px;
-    left: 350px;
-    background-color: rgba(255, 255, 255, 0.4);
+    float: center;
+    position: center;
+    margin:20px;
+    background-color: rgba(0, 0, 0, 0.363);
     border-radius: 50px;
     border: 1.5px solid white;
     padding: 1rem;
@@ -81,6 +105,13 @@
     width: 210px;
     height: auto;
     display: block;
+  }
+
+  .ans{
+    text-align: right;
+  }
+  .lans{
+    text-align:left
   }
 
   article,
@@ -94,6 +125,21 @@
     background: rgba(255, 255, 255, 0.4);
     border-radius: 100px;
   }
+
+  .google-maps {
+    position: relative;
+    padding-bottom: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50px;
+}
 
   
   header {

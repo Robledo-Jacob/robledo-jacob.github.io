@@ -9,20 +9,23 @@
 }
 
 h1 {
-    color: rgb(103, 68, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
 h2 {
-    color: rgb(103, 68, 255);
+    color: rgb(248, 248, 248);
 }
 
 section {
-    border: 1px solid rgb(52, 34, 129);
-    background-color: rgba(120, 96, 226, 0.473);
+    border: 8px solid rgb(41, 38, 40);
+    background-color: rgba(0, 0, 0, 0.473);
     text-align: center;
 }
 
+p{
+    color: rgb(248, 248, 248); 
+}
 img {
     width: 80%;
     height: auto;

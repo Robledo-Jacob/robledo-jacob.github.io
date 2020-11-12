@@ -4,7 +4,7 @@ const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
 offline_data = {
     towns: [{
             name: "Fish Haven",
-            photo: "https://robledo-jacob.github.io/lesson9/image/bright-clouds-cold-618833.jpg",
+            photo: "https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fll.png?1570335104397",
             motto: "This is Fish Heaven.",
             yearFounded: 1864,
             currentPopulation: 501,
@@ -120,9 +120,9 @@ function create_cards(json_object) {
 
         let img = document.createElement("img");
         if (towns[i].hasOwnProperty("photo")) {
-            img.setAttribute("src", "image/" + towns[i].photo);
+            img.setAttribute("src", `${towns[i].photo}`);
         } else {
-            img.setAttribute("src", "image/" + offline_data['towns'][i].photo);
+            img.setAttribute("src", "" + offline_data['towns'][i].photo);
         }
         img.setAttribute("alt", town_name);
         card.appendChild(img);
