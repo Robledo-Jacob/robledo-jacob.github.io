@@ -4,7 +4,7 @@ const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
 offline_data = {
     towns: [{
             name: "Fish Haven",
-            photo: "bright-clouds-cold-618833.jpg",
+            photo: "https://robledo-jacob.github.io/lesson9/image/bright-clouds-cold-618833.jpg",
             motto: "This is Fish Heaven.",
             yearFounded: 1864,
             currentPopulation: 501,
