@@ -4,7 +4,7 @@ const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
 offline_data = {
     towns: [{
             name: "Fish Haven",
-            photo: "https://cdn.glitch.com/63b2487a-2d09-4e23-82f6-d7329917f2b6%2Fthumbnails%2Fll.png?1570335104397",
+            photo: "fishhaven.jpg",
             motto: "This is Fish Heaven.",
             yearFounded: 1864,
             currentPopulation: 501,
@@ -18,7 +18,7 @@ offline_data = {
         },
         {
             name: "Preston",
-            photo: "clouds-cloudy-sky-daylight-1034887.jpg",
+            photo: "preston.jpg",
             motto: "Home of Napoleon Dynamite.",
             yearFounded: 1866,
             currentPopulation: 5204,
@@ -31,7 +31,7 @@ offline_data = {
         },
         {
             name: "Soda Springs",
-            photo: "clouds-daylight-environment-1374295.jpg",
+            photo: "",
             motto: "Historic Oregon Trail Oasis. The Soda is on Us.",
             yearFounded: 1858,
             currentPopulation: 2985,
