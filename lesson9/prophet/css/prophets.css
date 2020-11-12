@@ -1,36 +1,79 @@
-/*---Small---*/
+@import url('https://fonts.googleapis.com/css?family=Questrial|Manrope');
+:root{
+    --primary-color: #000000; 
+    --secondary-color: #000000;
+    --accent1-color: #000000; 
+    --accent2-color: #303030; 
+    --background-color: #525252;
+
+    --heading-font: 'Questrial', sans-serif;
+    --paragraph-font: 'Manrope', sans-serif;
+}
+
+
+body {
+    text-align: center;
+}
+main {
+    margin: 10px;
+    background-color: var(--accent1-color);
+    box-shadow: 0 0 20px var(--secondary-color);
+    padding: .5rem;
+    padding-bottom: 1rem;
+}
+p {
+    font-family: var(--paragraph-font);
+    margin-top: -10px;
+    color:#e4e4e4e1;
+}
+footer {
+    font-family: var(--paragraph-font);
+    padding: 2rem;
+    background-color: var(--accent2-color);
+    color:#ffffffe1;
+}
+
+/* -------headings------- */
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color:#fcfcfce1;
+}
+header {
+    background-color: var(--accent2-color);
+    padding: 2rem;
+}
+
+/* ---------image--------- */
+img {
+    width: 50%;
+    box-shadow: 0 0 15px var(--secondary-color);
+}
+
+
+
+/* ----------grid---------- */
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    margin: 0 auto;
+    grid-template-columns: 100%;
 }
-
-h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-
-h2 {
-    color: rgb(248, 248, 248);
-}
-
 section {
-    border: 8px solid rgb(41, 38, 40);
-    background-color: rgba(0, 0, 0, 0.473);
-    text-align: center;
+    margin: 5px;
+    padding-bottom: 1rem;
+    background-color: var(--background-color);
+    border: 3px solid #777777;
 }
 
-p{
-    color: rgb(248, 248, 248); 
-}
-img {
-    width: 80%;
-    height: auto;
+@media only screen and (min-width: 40em) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-
-
+@media only screen and (min-width: 60em) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 
