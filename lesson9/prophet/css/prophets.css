@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Questrial|Manrope');
+@import url('https://fonts.googleapis.com/css?family=Lato|Questrial&display=swap');
 :root{
     --primary-color: #000000; 
     --secondary-color: #000000;
@@ -6,8 +6,8 @@
     --accent2-color: #303030; 
     --background-color: #525252;
 
-    --heading-font: 'Questrial', sans-serif;
-    --paragraph-font: 'Manrope', sans-serif;
+    --heading-font: 'Lato';
+    --paragraph-font: 'Questrial';
 }
 
 
