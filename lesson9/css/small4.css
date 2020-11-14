@@ -27,6 +27,7 @@ nav {
 
 .navigation li:first-child {
   display: block;
+  
 }
 
 .navigation li {
@@ -38,7 +39,7 @@ nav {
 .navigation a {
   display: block;
   color: white;
-  padding: 0.75rem;
+  padding: 0.50rem;
   text-align: center;
   text-decoration: none;
 }
@@ -66,6 +67,7 @@ nav {
   list-style: none;
   text-align: center;
   padding: 0;
+  
 }
 
 /*END OF NAV*/
@@ -99,7 +101,7 @@ nav {
   width: 100%;
   height: auto;
   border-radius: 45px;
-
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body {
@@ -277,6 +279,7 @@ p {
   text-align: left;
   position: center;
   padding: 30px;
+  
 }
 
 /*Footer*/

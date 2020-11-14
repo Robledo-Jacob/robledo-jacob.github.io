@@ -48,6 +48,7 @@ article img {
   padding: 10px;
   margin: 10px;
   text-align: center;
+  font-size: 1.04rem;
 }
 
 
@@ -125,6 +126,7 @@ article img {
     text-align: left;
     position: right;
     padding: 30px;
+    font-size: 1.5rem;
   }
 
   .hero-ph {
