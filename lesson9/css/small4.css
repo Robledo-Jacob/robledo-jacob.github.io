@@ -125,13 +125,12 @@ article {
 
 article img {
   border-radius: 40px;
-  max-width: 100%;
+ 
   display: block;
-  width: 700px;
+
   max-width: 100%;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 article,
@@ -239,7 +238,7 @@ p {
   display: none;
 }
 
-.pic {
+.towns {
   height: auto;
   width: 100%;
   padding: auto;
@@ -293,6 +292,15 @@ footer {
   text-align: center;
 
   font-family: "Lexend Deca", sans-serif;
+}
+
+.add{
+  display: block;
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
 }
 
 /*Storm*/
@@ -354,52 +362,48 @@ input{
   text-align: center;
   width: 100%;
 }
-.pics {
+.towns {
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 5px;
   grid-row-gap: 10px;
 }
 
-.pics section {
+.towns section {
   width: 100%;
   height: auto;
   text-align: center;
   background: rgba(255, 255, 255, 0.45);
-
   border-radius: 25px;
   font-family: "Roboto", sans-serif;
 }
 
-.pics h2,
-.pics p,
-.pics img {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
 
-.pics h2 {
-  margin-top: 10px;
-  margin-bottom: 6px;
+
+.towns h2,
+.towns p {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
   color: white;
 }
 
-.pics p {
+.towns p {
   margin-bottom: 2px;
   color:white;
 }
 
-.pics img {
-  width: 180px;
+.towns img {
+  width: 200px;
   height: 220px;
   max-width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: 2px 2px 8px #121619;
+  box-shadow: 2px 2px 8px #121619;  
+
 }
 
-.pics .motto {
+.towns .motto {
   font-style: italic;
   font-weight: bold;
 }

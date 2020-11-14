@@ -16,14 +16,64 @@
     background-color: rgba(0, 0, 0, 0.363);
     font-family: 'Montserrat', sans-serif;
 }
-  
-  .pics {
+article img {
+  border-radius: 40px;
+  max-width: 100%;
+  width: 700px;
+  max-width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .towns {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr ;
   grid-column-gap: 5px;
   grid-row-gap: 10px;
 }
 
+/*control positions*/
+.towns section {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 25px;
+  font-family: "Roboto", sans-serif;
+
+}
+
+
+.towns h2,
+.towns p,
+.towns img {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+
+.towns p {
+  margin-bottom: 2px;
+  color:white;
+}
+
+.towns img {
+  
+  width: 200px;
+  height: 220px;
+  max-width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 8px #121619;
+
+}
+
+.towns .motto {
+  font-style: italic;
+  font-weight: bold;
+}
 
   .navigation {
     display: flex;
@@ -119,7 +169,7 @@
     margin-left: auto;
     margin-right: auto;
     color: white;
-    margin: 20px;
+   /* margin: 20px;*/
     padding: 40px;
     width: auto;
     background: rgba(255, 255, 255, 0.4);
@@ -175,4 +225,14 @@
     font-family: "Lexend Deca", sans-serif;
     text-align: center;
   }
+
+  .add{
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+  }
+  
 }

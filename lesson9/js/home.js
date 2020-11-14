@@ -1,5 +1,5 @@
 const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
-//const request_url = "https://splucena.github.io/lesson9/weather/towndata.json";
+
 
 offline_data = {
     towns: [{
@@ -31,7 +31,7 @@ offline_data = {
         },
         {
             name: "Soda Springs",
-            photo: "",
+            photo: "sodasprings.jpg",
             motto: "Historic Oregon Trail Oasis. The Soda is on Us.",
             yearFounded: 1858,
             currentPopulation: 2985,
@@ -119,15 +119,15 @@ function create_cards(json_object) {
         card.appendChild(average_rainfall);
 
         let img = document.createElement("img");
-        if (towns[i].hasOwnProperty("photo")) {
+        if (towns[i].hasOwnProperty("image")) {
             img.setAttribute("src", `${towns[i].photo}`);
         } else {
-            img.setAttribute("src", "" + offline_data['towns'][i].photo);
+            img.setAttribute("src", "image/" + offline_data['towns'][i].photo);
         }
         img.setAttribute("alt", town_name);
         card.appendChild(img);
 
-        document.querySelector("div.pics").appendChild(card);
+        document.querySelector("div.towns").appendChild(card);
     }
 }
 
