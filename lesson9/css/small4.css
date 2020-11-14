@@ -282,16 +282,23 @@ p {
 /*Footer*/
 
 footer {
+  margin: 3rem auto;
+  padding: 1rem;
+  max-width: 1500px;
+  border-radius: 100px 100px;
   text-align: center;
-  background-color: #ffffff;
-  font-family: "Lexend Deca", sans-serif;
-  background: rgba(255, 255, 255, 0.45);
 }
-
 .footer {
   text-align: center;
 
   font-family: "Lexend Deca", sans-serif;
+}
+
+footer {
+  text-align: center;
+  background-color: #ffffff;
+  font-family: "Lexend Deca", sans-serif;
+  background: rgba(255, 255, 255, 0.45);
 }
 
 .add{
