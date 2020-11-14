@@ -373,7 +373,7 @@ input{
   width: 100%;
   height: auto;
   text-align: center;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(46, 46, 46, 0.45);
   border-radius: 25px;
   font-family: "Roboto", sans-serif;
 }
@@ -394,9 +394,8 @@ input{
 }
 
 .towns img {
-  width: 200px;
-  height: 220px;
-  max-width: 100%;
+ 
+  max-width: auto;
   margin-top: 10px;
   margin-bottom: 10px;
   box-shadow: 2px 2px 8px #121619;  

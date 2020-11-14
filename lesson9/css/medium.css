@@ -8,9 +8,17 @@
   
   .pics {
   display: grid;
-  grid-template-columns:1fr;
+  grid-template-columns:1fr 1fr;
   grid-column-gap: 5px;
   grid-row-gap: 10px;
+}
+.towns img {
+ 
+  max-width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 8px #121619;  
+
 }
 
 }

@@ -18,9 +18,7 @@
 }
 article img {
   border-radius: 40px;
-  max-width: 100%;
-  width: 700px;
-  max-width: 100%;
+
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -38,7 +36,7 @@ article img {
   width: 100%;
   height: auto;
   text-align: center;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(46, 46, 46, 0.45);
   border-radius: 25px;
   font-family: "Roboto", sans-serif;
 
@@ -46,8 +44,7 @@ article img {
 
 
 .towns h2,
-.towns p,
-.towns img {
+.towns p{
   padding: 10px;
   margin: 10px;
   text-align: center;
@@ -61,8 +58,7 @@ article img {
 
 .towns img {
   
-  width: 200px;
-  height: 220px;
+
   max-width: auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -110,7 +106,7 @@ article img {
   }
 
   .img {
-    float: right;
+    float: center;
     width: 100%;
     padding: auto;
     margin: auto;
