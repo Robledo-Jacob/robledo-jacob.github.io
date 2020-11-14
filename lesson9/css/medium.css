@@ -6,6 +6,7 @@
         grid-template-columns: 1fr 1fr;
     }
   
+  
   .pics {
   display: grid;
   grid-template-columns:1fr 1fr;

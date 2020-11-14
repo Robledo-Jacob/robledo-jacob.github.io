@@ -9,6 +9,12 @@
     margin: 0 auto;
   }
   
+  .logo {
+    position: absolute;
+  
+  margin:auto;
+    width: 150px;
+  }
   #announcment {
     padding: .75em;
     text-align: center;
