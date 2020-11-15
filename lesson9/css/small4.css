@@ -27,7 +27,7 @@ nav {
 
 .navigation li:first-child {
   display: block;
-  
+
 }
 
 .navigation li {
@@ -67,7 +67,7 @@ nav {
   list-style: none;
   text-align: center;
   padding: 0;
-  
+
 }
 
 /*END OF NAV*/
@@ -81,6 +81,7 @@ nav {
   border-radius: 100px;
   font-size: 20px;
 }
+
 /*Sections the content*/
 .grid {
   display: grid;
@@ -101,7 +102,7 @@ nav {
   width: 100%;
   height: auto;
   border-radius: 45px;
-  
+
 }
 
 body {
@@ -127,7 +128,7 @@ article {
 
 article img {
   border-radius: 40px;
- 
+
   display: block;
 
   max-width: 100%;
@@ -217,7 +218,8 @@ h5 {
   display: center;
   margin: block;
 }
-.ans{
+
+.ans {
   text-align: right;
 }
 
@@ -279,7 +281,7 @@ p {
   text-align: center;
   position: center;
   padding: 30px;
-  
+
 }
 
 /*Footer*/
@@ -291,6 +293,7 @@ footer {
   border-radius: 100px 100px;
   text-align: center;
 }
+
 .footer {
   text-align: center;
   font-size: 1rem;
@@ -304,7 +307,7 @@ footer {
   background: rgba(255, 255, 255, 0.45);
 }
 
-.add{
+.add {
   display: block;
   color: white;
   padding: 0.75rem;
@@ -315,8 +318,7 @@ footer {
 
 /*Storm*/
 
-.info label
-input {
+.info label input {
   padding: 10px;
   margin: 5px;
   width: 75%;
@@ -345,11 +347,11 @@ label {
   border-radius: 50px;
 }
 
-textarea{
- 
- position: center;
+textarea {
+
+  position: center;
   width: 125%;
-  height:auto;
+  height: auto;
   display: block;
   text-align: left;
   font-size: 20px;
@@ -357,11 +359,9 @@ textarea{
   border-radius: 10px;
 }
 
-input{
-  border-radius:50px;
-  color:blue
-  
-  
+input {
+  border-radius: 50px;
+  color: blue
 }
 
 
@@ -372,6 +372,7 @@ input{
   text-align: center;
   width: 100%;
 }
+
 .towns {
   display: grid;
   grid-template-columns: 1fr;
@@ -390,23 +391,24 @@ input{
 
 
 .towns h2,
-.towns p{
+.towns p {
   padding: 10px;
   margin: 10px;
   text-align: center;
   font-size: .95rem;
 }
+
 .towns p {
   margin-bottom: 2px;
-  color:white;
+  color: white;
 }
 
 .towns img {
- 
+
   max-width: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: 2px 2px 8px #121619;  
+  box-shadow: 2px 2px 8px #121619;
 
 }
 

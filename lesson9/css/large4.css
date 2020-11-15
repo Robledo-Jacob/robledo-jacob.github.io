@@ -8,77 +8,85 @@
     max-width: 1500px;
     margin: 0 auto;
   }
-  li{
+
+  li {
+    text-decoration: none;
     text-align: left;
+    position: center;
+    padding: 30px;
+
   }
+
   .logo {
     position: absolute;
-  
-  margin:auto;
+
+    margin: auto;
     width: 150px;
   }
+
   #announcment {
     padding: .75em;
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.363);
     font-family: 'Montserrat', sans-serif;
-}
-article img {
-  border-radius: 40px;
+  }
 
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
+  article img {
+    border-radius: 40px;
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .towns {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-column-gap: 5px;
-  grid-row-gap: 10px;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+  }
 
-/*control positions*/
-.towns section {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  background: rgba(46, 46, 46, 0.45);
-  border-radius: 25px;
-  font-family: "Roboto", sans-serif;
+  /*control positions*/
+  .towns section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: rgba(46, 46, 46, 0.45);
+    border-radius: 25px;
+    font-family: "Roboto", sans-serif;
 
-}
-
-
-.towns h2,
-.towns p{
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-  font-size: 1.04rem;
-}
+  }
 
 
-.towns p {
-  margin-bottom: 2px;
-  color:white;
-}
+  .towns h2,
+  .towns p {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.04rem;
+  }
 
-.towns img {
-  
 
-  max-width: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  box-shadow: 2px 2px 8px #121619;
+  .towns p {
+    margin-bottom: 2px;
+    color: white;
+  }
 
-}
+  .towns img {
 
-.towns .motto {
-  font-style: italic;
-  font-weight: bold;
-}
+
+    max-width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 8px #121619;
+
+  }
+
+  .towns .motto {
+    font-style: italic;
+    font-weight: bold;
+  }
 
   .navigation {
     display: flex;
@@ -112,13 +120,14 @@ article img {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    min-width:400px;
-    min-height:300px;
+    min-width: 400px;
+    min-height: 300px;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
   }
+
   .picture-container:hover {
-    box-shadow: 0 0 30px rgba(33,33,33,1); 
+    box-shadow: 0 0 30px rgba(33, 33, 33, 1);
   }
 
   .img {
@@ -129,7 +138,7 @@ article img {
     display: block;
   }
 
-  .add{
+  .add {
     display: block;
     color: white;
     padding: 0.75rem;
@@ -137,6 +146,7 @@ article img {
     text-decoration: none;
     list-style: none;
   }
+
   .hero-ph {
     margin: 10px;
     border-radius: 50px;
@@ -150,15 +160,15 @@ article img {
     margin: 20px auto;
     position: relative;
     height: auto;
-    margin:20px;
+    margin: 20px;
     width: auto;
     display: flex;
   }
-  
+
   .weathersum {
     float: center;
     position: center;
-    margin:20px;
+    margin: 20px;
     background-color: rgba(0, 0, 0, 0.363);
     border-radius: 50px;
     border: 1.5px solid white;
@@ -170,11 +180,12 @@ article img {
     display: block;
   }
 
-  .ans{
+  .ans {
     text-align: right;
   }
-  .lans{
-    text-align:left
+
+  .lans {
+    text-align: left
   }
 
   article,
@@ -182,7 +193,7 @@ article img {
     margin-left: auto;
     margin-right: auto;
     color: white;
-   /* margin: 20px;*/
+    /* margin: 20px;*/
     padding: 40px;
     width: auto;
     background: rgba(255, 255, 255, 0.4);
@@ -194,17 +205,18 @@ article img {
     padding-bottom: 50%;
     height: 50%;
     overflow: hidden;
-}
-.google-maps iframe {
+  }
+
+  .google-maps iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100% !important;
     height: 100% !important;
     border-radius: 50px;
-}
+  }
 
-  
+
   header {
     padding: 2rem;
 
@@ -214,6 +226,7 @@ article img {
   h1 {
     font-size: 2.5rem;
   }
+
   h2 {
     font-size: 2rem;
   }
@@ -239,7 +252,7 @@ article img {
     text-align: center;
   }
 
-  .add{
+  .add {
     display: block;
     color: white;
     padding: 0.75rem;
@@ -247,5 +260,5 @@ article img {
     text-decoration: none;
     list-style: none;
   }
-  
+
 }
