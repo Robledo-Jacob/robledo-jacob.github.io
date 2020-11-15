@@ -5,7 +5,9 @@
     .gallery-images {
         grid-template-columns: 1fr 1fr;
     }
-  
+    li{
+      text-align: center;
+    }
     .li {
       text-decoration: none;
       text-align: center;
