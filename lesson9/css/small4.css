@@ -276,7 +276,7 @@ p {
 
 .li {
   text-decoration: none;
-  text-align: left;
+  text-align: center;
   position: center;
   padding: 30px;
   
@@ -293,7 +293,7 @@ footer {
 }
 .footer {
   text-align: center;
-
+  font-size: 1rem;
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -308,7 +308,7 @@ footer {
   display: block;
   color: white;
   padding: 0.75rem;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   list-style: none;
 }

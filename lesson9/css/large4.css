@@ -127,14 +127,14 @@ article img {
     display: block;
   }
 
-  .li {
-    text-decoration: none;
+  .add{
+    display: block;
+    color: white;
+    padding: 0.75rem;
     text-align: left;
-    position: right;
-    padding: 30px;
-    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
   }
-
   .hero-ph {
     margin: 10px;
     border-radius: 50px;
