@@ -1,0 +1,50 @@
+@media only screen and (min-width:35.5em) {
+
+
+
+    .gallery-images {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .li {
+      text-decoration: none;
+      text-align: left;
+      position: center;
+      padding: 30px;
+  
+    }
+  
+    .pics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 5px;
+      grid-row-gap: 10px;
+    }
+  
+    .towns h2,
+    .towns p {
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      font-size: 1rem;
+    }
+  
+    .towns img {
+  
+      max-width: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-shadow: 2px 2px 8px #121619;
+  
+    }
+  
+    .navigation a {
+      display: block;
+      color: white;
+      padding: 0.10rem;
+      text-align: center;
+      text-decoration: none;
+    }
+  
+
+  }

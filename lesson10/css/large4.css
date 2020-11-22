@@ -1,0 +1,270 @@
+@media only screen and (min-width: 37.5em) {
+  .grid {
+    padding: 10px;
+    display: flex;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-row: 1fr 1fr;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  li {
+    text-decoration: none;
+    text-align: left;
+    position: center;
+    padding: 30px;
+
+  }
+
+  .logo {
+    position: absolute;
+
+    margin: auto;
+    width: 150px;
+  }
+
+  #announcment {
+    padding: .75em;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.363);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  article img {
+    border-radius: 40px;
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .towns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+  }
+
+  /*control positions*/
+  .towns section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: rgba(46, 46, 46, 0.45);
+    border-radius: 25px;
+    font-family: "Roboto", sans-serif;
+
+  }
+
+
+  .towns h2,
+  .towns p {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.04rem;
+  }
+
+
+  .towns p {
+    margin-bottom: 2px;
+    color: white;
+  }
+
+  .towns img {
+
+
+    max-width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 8px #121619;
+
+  }
+
+  .towns .motto {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation li a {
+    color: white;
+    font-size: 30px;
+  }
+
+  .icon img {
+    width: auto;
+    height: auto;
+    display: flex;
+  }
+
+  .hide {
+    display: block;
+    
+  }
+
+  .gallery-images {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 400px;
+    min-height: 300px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .picture-container:hover {
+    box-shadow: 0 0 30px rgba(33, 33, 33, 1);
+  }
+
+  .img {
+    float: center;
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    display: block;
+  }
+
+  .add {
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .hero-ph {
+    margin: 10px;
+    border-radius: 50px;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+  }
+
+  .herodiv {
+    margin: 20px auto;
+    position: relative;
+    height: auto;
+    margin: 20px;
+    width: auto;
+    display: flex;
+  }
+
+  .weathersum {
+    float: center;
+    position: center;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 50px;
+    border: 1.5px solid white;
+    padding: 1rem;
+    box-shadow: 0 0 5px white;
+    text-align: left;
+    width: 210px;
+    height: auto;
+    display: block;
+  }
+
+  .ans {
+    text-align: right;
+  }
+
+  .lans {
+    text-align: left
+  }
+
+  article,
+  .weather {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    /* margin: 20px;*/
+    padding: 40px;
+    width: auto;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 100px;
+  }
+
+  .google-maps {
+    position: relative;
+    padding-bottom: 50%;
+    height: 50%;
+    overflow: hidden;
+  }
+
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50px;
+  }
+
+
+  header {
+    padding: 2rem;
+
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+  }
+
+  .add {
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+  }
+  .forecast-table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-spacing: 5px;
+}
+}
