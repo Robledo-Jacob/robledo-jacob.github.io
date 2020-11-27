@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="css/small4.css" type="text/css" rel="stylesheet" />
+    <link href="css/large4.css" type="text/css" rel="stylesheet" />
+    <link href="css/medium.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato%7CQuestrial&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Preston Town</title>
+</head>
+<aside id="announcment">Saturday = Preston Pancakes in the Park!
+    <br>9:00 a.m. Saturday at the city park pavilion.</aside>
+
+
+<div>
+    <img class="logo" src="image/icon.png" alt="logo">
+</div>
+
+<h1>Smart Weather</h1>
+
+<header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index-9.html">Home</a></li>
+            <li><a href="preston-9.html">Preston</a></li>
+            <li><a href="sodasprings-9.html"> Soda Springs </a></li>
+            <li><a href="fishhaven-9.html">Fish Haven</a></li>
+            <li><a href="stormcenter-9.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<main class="navigation1 content">
+    <!--Hero Image/Weather Summary Placeholder-->
+    <h3>
+        Your Weather for Today
+    </h3>
+    <article>
+        <div class="herodiv">
+            <!--Image with box over -->
+            <div class="hero-ph">
+                <picture>
+
+
+                    <source media="(min-width: 64em)" srcset="image/lrg.jpg">
+                    <source media="(min-width: 37.5em)" srcset="image/me.jpg">
+                    <source media="(max-width: 35em)" srcset="image/sml.jpg">
+                    <img class="img" src="image/wdd230_image_franklinOriginal.jpeg" alt="sunny park preston">
+                </picture>
+            </div>
+            <section class="weathersum">
+                <h3 class="text-align-center">Weather Summary</h3>
+                <div>
+                    <table>
+                        <tbody class="ans">
+                            <tr>
+                                <td class="lans"> Currently:</td>
+                                <td><span id="currently"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="lans">High:</td>
+                                <td><span id="temperature"></span> &#8457;</td>
+                            </tr>
+                            <tr>
+                                <td class="lans">Wind Chill:</td>
+                                <td>
+                                    <span id="wind_chill"></span><span id="wind_chill_attribute"> &#8457;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lans">Humidity:</td>
+                                <td><span id="humidity"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="lans">Wind Speed:</td>
+                                <td><span id="wind_speed"></span> mph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <section class="hide">
+        <h3>
+          5 Day Forecast Placeholder
+        </h3>
+  
+        <div>
+  
+        <article>
+          <div>
+            <table>
+              <thead>
+                  <tr>
+                      <td><span id="day1"></span> </td>
+                     <td><span id="day2"></span> </td>
+                     <td><span id="day3"></span> </td>
+                     <td><span id="day4"></span> </td>
+                     <td><span id="day5"></span> </td>
+                   </tr>
+          <!-- Create 3 sections calling, days of the week, images, temperature,  -->
+                   <tr>
+                   <td><span id="forecast_image_1"></span> </td>
+                  <td><span id="forecast_image_2"></span> </td>
+                  <td><span id="forecast_image_3"></span> </td>
+                  <td><span id="forecast_image_4"></span> </td>
+                  <td><span id="forecast_image_5"></span> </td>
+                </tr> 
+                
+                <tr>
+                  <td><span id="forecast_value_1"></span> &#8457;</td>
+                  <td><span id="forecast_value_2"></span> &#8457;</td>
+                  <td><span id="forecast_value_3"></span> &#8457;</td>
+                  <td><span id="forecast_value_4"></span> &#8457;</td>
+                  <td><span id="forecast_value_5"></span> &#8457;</td>
+                </tr>
+                
+            
+              </thead>
+            </table>
+          </div>
+        </article>
+      </section>
+    <h3>
+        Todays Article
+    </h3>
+
+
+    <article>
+        <div>
+            <img class="img" src="image/pexels-freestocksorg-839462.jpg" alt="town picture">
+
+            <p>
+
+                If you live in Idaho you know that it snows a ton, and none stop until the summer arrives. There is no
+                such thing called spring it just melts away into the summer for a few months then we are back at it
+                again for 6 to 8 months of snow sticking to the floor. So here are some activities to enjoy your misery
+                in the snow tundra of Idaho.
+            </p>
+            <ol>
+                <li>Snow Graffiti</li>
+                <li>Snow Cave</li>
+                <li>Snowman</li>
+                <li>Sledding</li>
+                <li>Skiing</li>
+                <li>Visiting the Ice cave </li>
+                <li>Yellow Snow cones</li>
+            </ol>
+        </div>
+    </article>
+
+
+
+
+    <h4>
+        Our Headquarters
+    </h4>
+    <article>
+        <ul class="add">
+
+            <li>Address: 30°N 1st E<br>
+                Preston, ID 83263</li>
+            <li>Phone Number: 888-888-8888</li>
+            <li>Email: smartweather@weather.com </li>
+
+
+        </ul>
+        <section class="hide">
+            <div class="google-maps">
+                <!-- Height=450px; Width=600px -->
+                <iframe src="https://maps.google.com/maps?q=Preston%2C%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="600" height="450" style="border:0"></iframe>
+
+
+            </div>
+        </section>
+    </article>
+
+    <!--
+    <h2>
+      The Purpose of the website is have a modern take of weather and give the
+      user suggestions on what to do for the day. Also for any one who are
+      going to do recreational or outdoor activities can get a quick update
+      with a suggestionon what to bring for the day.
+
+      <br />
+      The Website will be usefull to any device from tablets, laptops, and
+      mobile devices The webdomain will be smart-weather.com
+    </h2>
+
+    end of box3-->
+</main>
+
+
+<footer>
+    <p class="footer">
+        &copy;2020|Jacob Robledo|Utah|
+        <a href="https://www.byui.edu/online"> BYUI Online Learning </a>
+        <a href="wireframe-9.html">Wire Frame</a>
+    </p>
+    <p class="footer">This Document was Last modified on:<span id="currentDate"></span></p>
+    <script src="js/toggle4.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/fishhaven-11.js"></script>
+</footer>
+
+
+</html>
