@@ -42,6 +42,7 @@ document.getElementById('currentDate').innerHTML = new Date().toLocaleDateString
 
 
 
+
 function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
 }

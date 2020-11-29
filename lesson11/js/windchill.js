@@ -70,4 +70,8 @@ fetch(apiURLForecast)
         counter = counter + 1;
       }
     }
+
+
+
+    
   });
