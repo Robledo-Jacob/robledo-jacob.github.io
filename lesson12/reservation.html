@@ -9,7 +9,10 @@
   <link href="css/large4.css" type="text/css" rel="stylesheet" />
   <link href="css/medium.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato%7CQuestrial&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@600&family=Roboto&display=swap"
+    rel="stylesheet">
+
   <link rel="shortcut icon" href="favicon.ico" />
   <title>Reservation</title>
 </head>
@@ -38,133 +41,136 @@
 
 <main class="navigation1 content">
 
-<source media="(min-width: 64em)" srcset="image/h.jpg">
+  <source media="(min-width: 64em)" srcset="image/h.jpg">
   <source media="(min-width: 37.5em)" srcset="image/m.jpg">
   <source media="(max-width: 35em)" srcset="image/l.jpg">
-  <img class="img" src="image/pexels-bhargava-marripati-3591074.jpg" alt=" bike">
+  <img class="img" src="image/pexels-bhargava-marripati-3591074.jpg" alt="Temple">
 
 
-<h3>
-  Reservation Page
-</h3>
-<div class="info">
-  <main>
-    <form action="thanks.html" method="GET">
-      <article>
-        <h3>
-          Please Fill Out Your Information
-        </h3>
+  <h3>
+    Reservation Page
+  </h3>
+  <div class="info">
+    <main>
+      <form action="thanks.html" method="GET">
+        <article>
+          <h3>
+            Please Fill Out Your Information
+          </h3>
 
 
-        <label for="fullname">Full Name
-          <input type="text" name="fullname" minlength="5" placeholder="your name" pattern="[A-Za-z ]+" required /></label>
+          <label for="fullname">Full Name
+            <input type="text" name="fullname" minlength="5" placeholder="your name" pattern="[A-Za-z ]+"
+              required /></label>
 
-        <label for="email">
-          Email
-          <input type="email" required name="email" placeholder="your@email.com" id="email" /></label>
+          <label for="email">
+            Email
+            <input type="email" required name="email" placeholder="your@email.com" id="email" /></label>
 
 
 
-        <label for="phone_number">
-          Phone Number
-          <input type="tel" id="phone_number" required /></label>
+          <label for="phone_number">
+            Phone Number
+            <input type="tel" id="phone_number" required /></label>
 
-        <label for="zip">
-          Zip code <input type="number" id="zip" required/></label>
+          <label for="zip">
+            Zip code <input type="number" id="zip" required /></label>
 
           <label for="fullname">Home State or Country
-            <input type="text" name="fullname" minlength="5" placeholder="Home State or Country" pattern="[A-Za-z ]+" required /></label>
-      </article>
+            <input type="text" name="fullname" minlength="5" placeholder="Home State or Country" pattern="[A-Za-z ]+"
+              required /></label>
+        </article>
 
 
-      <article>
-        <h3>Reservations</h3>
-        <label for="rental_date">Date<input type="date" name="rental_date" id="rental_date" /></label>
-        <label for="rental_type">
-          Rental Type
-          <input type="text" name="rental_type" id="rental_type" list="rental_types" /></label>
-        <datalist id="rental_types">
-          <option value="Honda Metro Scooter"></option>
-          <option value="Honda Dio Scooter"></option>
-          <option value="Honda PCX150 Scooter"></option>
-          <option value="Honda Pioneer ATV"></option>
-          <option value="Jeep Wrangler - 4 door with a/c"></option>
-          <option value="Jeep Wrangler - 2 door"></option>
-        
-        </datalist>
+        <article>
+          <h3>Reservations</h3>
+          <label for="rental_date">Date<input type="date" name="rental_date" id="rental_date" /></label>
+          <label for="rental_type">
+            Rental Type
+            <input type="text" name="rental_type" id="rental_type" list="rental_types" /></label>
+          <datalist id="rental_types">
+            <option value="Honda Metro Scooter"></option>
+            <option value="Honda Dio Scooter"></option>
+            <option value="Honda PCX150 Scooter"></option>
+            <option value="Honda Pioneer ATV"></option>
+            <option value="Jeep Wrangler - 4 door with a/c"></option>
+            <option value="Jeep Wrangler - 2 door"></option>
 
-        <label class="flexly" for="rating">Compnay Number (1 to 10)<input type="range" id="rating" value="5" min="1"
-            max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" />
-          <span id="ratingvalue">5</span>
-        </label>
-        <datalist id="tickmarks">
-          <option value="0"> </option>
-          <option value="1"> </option>
-          <option value="2"> </option>
-          <option value="3"> </option>
-          <option value="4"> </option>
-          <option value="5"> </option>
-          <option value="6"> </option>
-          <option value="7"> </option>
-          <option value="8"> </option>
-          <option value="9"> </option>
-          <option value="10"> </option>
-        </datalist>
+          </datalist>
 
-        <label for="rental_country">
-          Cruise Line if Applicable
-          <select name="rental_country" id="rental_country">
-            <option value="select_value" disabled selected>
-              Cruise Line ...</option>
-            <option value="">Yes</option>
-            <option value="">No</option>
-       
+          <label class="flexly" for="rating">Compnay Number (1 to 10)<input type="range" id="rating" value="5" min="1"
+              max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)" />
+            <span id="ratingvalue">5</span>
+          </label>
+          <datalist id="tickmarks">
+            <option value="0"> </option>
+            <option value="1"> </option>
+            <option value="2"> </option>
+            <option value="3"> </option>
+            <option value="4"> </option>
+            <option value="5"> </option>
+            <option value="6"> </option>
+            <option value="7"> </option>
+            <option value="8"> </option>
+            <option value="9"> </option>
+            <option value="10"> </option>
+          </datalist>
+
+          <label for="rental_country">
+            Cruise Line if Applicable
+            <select name="rental_country" id="rental_country">
+              <option value="select_value" disabled selected>
+                Cruise Line ...</option>
+              <option value="">Yes</option>
+              <option value="">No</option>
+
             </select></label>
-      </article>
+        </article>
 
 
 
-      <article>
-        <h3>
-          Any Special Accommodations?
-        </h3>
-        <p>
-          <i>(Choose one)</i>
-        </p>
+        <article>
+          <h3>
+            Any Special Accommodations?
+          </h3>
+          <p>
+            <i>(Choose one)</i>
+          </p>
 
 
-        <label for="rb_yes"><input type="radio" value="yes" name="user_rental_level" id="rb_yes" />
-          Yes</label>
-        <label for="rb_no"><input type="radio" value="no" name="user_rental_level" id="rb_no" />
-          No</label>
-        <label for="rb_maybe"><input type="radio" value="maybe" name="user_rental_level" id="rb_maybe" />
-          Maybe</label>
-      </article>
+          <label for="rb_yes"><input type="radio" value="yes" name="user_rental_level" id="rb_yes" />
+            Yes</label>
+          <label for="rb_no"><input type="radio" value="no" name="user_rental_level" id="rb_no" />
+            No</label>
+          <label for="rb_maybe"><input type="radio" value="maybe" name="user_rental_level" id="rb_maybe" />
+            Maybe</label>
+        </article>
 
-      <article>
+        <article>
 
-        <h3>Additional Information</h3>
-        <label for="comment">Comments<textarea name="comment" id="comment" rows="10"></textarea></label>
+          <h3>Additional Information</h3>
+          <label for="comment">Comments<textarea name="comment" id="comment" rows="10"></textarea></label>
 
-        <input type="submit" value="Submit Your Reservation" onclick="validate_form()">
-
-
-      </article>
-    </form>
-  </main>
+          <input type="submit" value="Submit Your Reservation" onclick="validate_form()">
 
 
-  <footer>
-    <p class="footer">
-      &copy;2020|Jacob Robledo|Utah|
-      <a href="https://www.byui.edu/online"> BYUI Online Learning </a>
-    </p>
-    <p class="footer">This Document was Last modified on:<span id="currentDate"></span></p>
-    <script src="js/toggle4.js"></script>
-    <script src="js/windchill.js"></script>
-  </footer>
+        </article>
+      </form>
+    </main>
 
- </div>
+
+    <footer>
+      <p class="footer">
+        &copy;2020|Jacob Robledo|Utah|
+        <a href="https://www.byui.edu/online"> BYUI Online Learning </a>
+      </p>
+      <p class="footer">This Document was Last modified on:<span id="currentDate"></span></p>
+      <script src="js/toggle4.js"></script>
+      <script src="js/windchill.js"></script>
+    </footer>
+
+  </div>
 
 
 </html>
