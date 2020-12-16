@@ -33,7 +33,7 @@ offline_data = {
             name: "Jeep Rentals",
             photo: "pexels-apg-graphics-1603410.jpg",
             motto: "4-door Jeep Wrangler - manual with A/C - 5 people max",
-            yearFounded: "2-door Jeep Wrangler - open air - manual - 4 people max",
+            yearFounded: "2-door Jeep Wrangler - open air - manual - 4 Max",
             currentPopulation: "",
            
             events: [

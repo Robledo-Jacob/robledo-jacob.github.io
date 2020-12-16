@@ -21,13 +21,14 @@ table{
   }
   .title{
   text-align:center;
-  background-color:#333e49 ;
+  background-color:#4d5154 ;
   
   }
   
   .tabg{
     width: 100%;    
-    background-color:#4d5154;
+    background-color:#aaaaaa;
+    color: #212529;
   }
   
   .tabn {

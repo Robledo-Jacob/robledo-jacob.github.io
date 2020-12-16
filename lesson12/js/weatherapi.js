@@ -1,5 +1,5 @@
 const apiURL =
-  "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a";
+  "https://api.openweathermap.org/data/2.5/weather?id=3521342&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a";
 
 // The formula to calculate the wind chill factor is 
 // LaTeX: f=35.74+0.6215\:t-35.75\:s^{0.16}+0.4275\:t\:s^{0.16} f = 35.74 + 0.6215 t − 35.75 s 0.16 + 0.4275 t s 0.16 , 
@@ -44,7 +44,7 @@ fetch(apiURL)
   });
 
 const apiURLForecast =
-  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a";
+  "https://api.openweathermap.org/data/2.5/forecast?id=3521342&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a";
 fetch(apiURLForecast)
   .then(response => response.json())
   .then(jsObject => {

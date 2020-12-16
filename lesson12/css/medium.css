@@ -6,6 +6,17 @@
       grid-template-columns: 1fr 1fr;
     }
   
+    button {
+      background-color:#aaaaaa;
+      padding: 10px 20px;
+      margin: auto;
+      border:#4d5154;
+      font-weight: 1000;
+      font-family:'Raleway', sans-serif;
+      color: #212529;
+      font-size: 1.3rem;
+    }
+
     .li {
       text-decoration: none;
       text-align: left;
