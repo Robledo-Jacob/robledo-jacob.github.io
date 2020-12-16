@@ -2,13 +2,13 @@ const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 
 offline_data = {
-    rentals: [{
+    towns: [{
             name: "Honda Motor Scooter",
             photo: "pexels-loifotos-2044873.jpg",
-            hondaMetro: "Honda Metropolitan (49cc) - 1 person",
-            hondaDio: "Honda Dio (110cc) - 2 person"
-            hondaPc: "Honda PCX150 (149cc) - 2 person"
-            averageRainfall:
+            motto: "Honda Metropolitan (49cc) - 1 person",
+            yearFounded: "Honda Dio (110cc) - 2 person",
+            currentPopulation: "Honda PCX150 (149cc) - 2 person",
+          
             events: [
                 "April 1: How Big Was That Fish Day",
                 "May 15-30: Rush the Creek Days",
@@ -17,12 +17,12 @@ offline_data = {
             ]
         },
         {
-            name: "ATV",
-            photo: "pexels-alexander-nadrilyanski-4027995.jpg",
-            motto: "Home of Napoleon Dynamite.",
-            yearFounded: 1866,
-            currentPopulation: 5204,
-            averageRainfall: 16.65,
+            name: "ATV Side-by-Side",
+            photo:  "pexels-alexander-nadrilyanski-4027995.jpg",
+            motto: "Honda Pioneer 1000",
+            yearFounded: ".",
+            currentPopulation: ".",
+           
             events: [
                 "March 29: Work Creek Revival",
                 "July 8-12: Napoleon Dynamite Festival",
@@ -32,10 +32,10 @@ offline_data = {
         {
             name: "Jeep Rentals",
             photo: "pexels-apg-graphics-1603410.jpg",
-            motto: "Historic Oregon Trail Oasis. The Soda is on Us.",
-            yearFounded: 1858,
-            currentPopulation: 2985,
-            averageRainfall: 15.75,
+            motto: "4-door Jeep Wrangler - manual with A/C - 5 people max",
+            yearFounded: "2-door Jeep Wrangler - open air - manual - 4 people max",
+            currentPopulation: "",
+           
             events: [
                 "February 29: Geyser Song Day",
                 "May 1-6: Days of May Celebration",

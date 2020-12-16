@@ -3,12 +3,12 @@ const request_url = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 offline_data = {
     towns: [{
-            name: "Fish Haven",
-            photo: "fishhaven.jpg",
-            motto: "This is Fish Heaven.",
-            yearFounded: 1864,
-            currentPopulation: 501,
-            averageRainfall: 14.2,
+            name: "Honda Motor Scooter",
+            photo: "pexels-loifotos-2044873.jpg",
+            motto: "Honda Metropolitan (49cc) - 1 person",
+            yearFounded: "Honda Dio (110cc) - 2 person",
+            currentPopulation: "Honda PCX150 (149cc) - 2 person",
+          
             events: [
                 "April 1: How Big Was That Fish Day",
                 "May 15-30: Rush the Creek Days",
@@ -17,12 +17,12 @@ offline_data = {
             ]
         },
         {
-            name: "Preston",
-            photo: "preston.jpg",
-            motto: "Home of Napoleon Dynamite.",
-            yearFounded: 1866,
-            currentPopulation: 5204,
-            averageRainfall: 16.65,
+            name: "ATV Side-by-Side",
+            photo:  "pexels-alexander-nadrilyanski-4027995.jpg",
+            motto: "Honda Pioneer 1000",
+            yearFounded: ".",
+            currentPopulation: ".",
+           
             events: [
                 "March 29: Work Creek Revival",
                 "July 8-12: Napoleon Dynamite Festival",
@@ -30,12 +30,12 @@ offline_data = {
             ]
         },
         {
-            name: "Soda Springs",
-            photo: "sodasprings.jpg",
-            motto: "Historic Oregon Trail Oasis. The Soda is on Us.",
-            yearFounded: 1858,
-            currentPopulation: 2985,
-            averageRainfall: 15.75,
+            name: "Jeep Rentals",
+            photo: "pexels-apg-graphics-1603410.jpg",
+            motto: "4-door Jeep Wrangler - manual with A/C - 5 people max",
+            yearFounded: "2-door Jeep Wrangler - open air - manual - 4 people max",
+            currentPopulation: "",
+           
             events: [
                 "February 29: Geyser Song Day",
                 "May 1-6: Days of May Celebration",
@@ -46,7 +46,7 @@ offline_data = {
 };
 
 function create_cards(json_object) {
-    let accepted_towns = ["Preston", "Soda Springs", "Fish Haven"];
+    let accepted_towns = ["onda Motor Scooter", "ATV", "Jeep Rentals"];
     let towns = json_object["towns"].filter(town => {
         return accepted_towns.includes(town.name);
     });
@@ -56,31 +56,31 @@ function create_cards(json_object) {
         town_names.push(element.name);
     });
 
-    if (!town_names.includes("Preston")) {
+    if (!town_names.includes("Honda Motor Scooter")) {
         towns.splice(1, 0, offline_data['towns'][1]);
     }
 
-    if (!town_names.includes("Fish Haven")) {
+    if (!town_names.includes("ATV")) {
         towns.splice(0, 0, offline_data['towns'][0]);
     }
 
-    if (!town_names.includes("Soda Springs")) {
+    if (!town_names.includes("Jeep Rentals")) {
         towns.splice(2, 0, offline_data['towns'][2]);
     }
 
     for (let i = 0; i < towns.length; i++) {
         let card = document.createElement("section");
-        let h2 = document.createElement("h2");
+        let h1 = document.createElement("h1");
 
         let town_name;
         if (towns[i].hasOwnProperty("name")) {
             town_name = towns[i].name;
-            h2.textContent = town_name;
+            h1.textContent = town_name;
         } else {
             town_name = offline_data['towns'][i].name;
-            h2.textContent = town_name;
+            h1.textContent = town_name;
         }
-        card.appendChild(h2);
+        card.appendChild(h1);
 
         let motto = document.createElement("p");
         if (towns[i].hasOwnProperty("motto")) {
@@ -93,30 +93,21 @@ function create_cards(json_object) {
 
         let year_founded = document.createElement("p");
         if (towns[i].hasOwnProperty("yearFounded")) {
-            year_founded.textContent = "Year Founded: " + towns[i].yearFounded;
+            year_founded.textContent = "" + towns[i].yearFounded;
         } else {
-            year_founded.textContent = "Year Founded: " + offline_data['towns'][i].yearFounded;
+            year_founded.textContent = "" + offline_data['towns'][i].yearFounded;
         }
         card.appendChild(year_founded);
 
         let population = document.createElement("p");
         if (towns[i].hasOwnProperty("currentPopulation")) {
-            population.textContent = "Population: " + towns[i].currentPopulation;
+            population.textContent = " " + towns[i].currentPopulation;
         } else {
             population.textContent =
-                "Population: " + offline_data['towns'][i].currentPopulation;
+                "" + offline_data['towns'][i].currentPopulation;
         }
         card.appendChild(population);
 
-        let average_rainfall = document.createElement("p");
-        if (towns[i].hasOwnProperty("averageRainfall")) {
-            average_rainfall.textContent =
-                "Annual Rainfall: " + towns[i].averageRainfall;
-        } else {
-            average_rainfall.textContent =
-                "Annual Rainfall: " + offline_data['towns'][i].averageRainfall;
-        }
-        card.appendChild(average_rainfall);
 
         let img = document.createElement("img");
         if (towns[i].hasOwnProperty("image")) {
