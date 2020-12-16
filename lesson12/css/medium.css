@@ -1,0 +1,83 @@
+@media only screen and (min-width:35.5em) {
+
+
+
+    .gallery-images {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .li {
+      text-decoration: none;
+      text-align: left;
+      position: center;
+      padding: 30px;
+  
+    }
+  
+    .pics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 5px;
+      grid-row-gap: 10px;
+    }
+  
+    .towns h2,
+    .towns p {
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      font-size: 1rem;
+    }
+  
+    .towns img {
+  
+      max-width: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-shadow: 2px 2px 8px #121619;
+  
+    }
+  
+    .navigation a {
+      display: block;
+      color: white;
+      padding: 0.10rem;
+      text-align: center;
+      text-decoration: none;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      text-align: left;
+      margin: 10px;
+      line-height: 1.6rem;
+      
+    }
+
+
+    .leftcol,
+    .rightcol {
+      float: center;
+        width: auto;
+        padding: auto;
+        margin: auto;
+        display: block;
+      
+      
+    }
+    .icon {
+      width: 50px;
+      box-shadow: 10px 10px 10px black;
+      border-radius: 10px;
+      display: block;
+      }
+      .socialmedia {
+        padding: 10px;
+        display: block;
+        width: auto;
+      }
+    
+    
+  }
