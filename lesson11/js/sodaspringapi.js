@@ -1,6 +1,6 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=a9b6f510fa81d13af4c6e7785e1db32a"
+const apiURL =
+  "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a";
 
-//Fetch for Weather Summary
 // The formula to calculate the wind chill factor is 
 // LaTeX: f=35.74+0.6215\:t-35.75\:s^{0.16}+0.4275\:t\:s^{0.16} f = 35.74 + 0.6215 t − 35.75 s 0.16 + 0.4275 t s 0.16 , 
 // where f is the wind chill factor in Fahrenheit, t is the air average temperature in Fahrenheit, 
@@ -43,10 +43,8 @@ fetch(apiURL)
     }
   });
 
-//Weather Forecast URL
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=a9b6f510fa81d13af4c6e7785e1db32a"
-
-
+  const apiURLForecast =
+  "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a";
 fetch(apiURLForecast)
   .then(response => response.json())
   .then(jsObject => {

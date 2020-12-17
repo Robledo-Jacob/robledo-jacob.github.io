@@ -49,14 +49,11 @@ fetch(apiURLForecast)
   .then(response => response.json())
   .then(jsObject => {
     let forecast_data = jsObject.list;
-   
+    let dt_txts_value = [];
     let counter = 1;
-
-    let daynames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-    let day = daynames[date.getDay()];
     for (let i = 0; i < forecast_data.length; i++) {
       let dt_txts = forecast_data[i].dt_txt.split(" ");
-      document.getElementById('day' + count).textContent = day;
+
       if (dt_txts[1] == "18:00:00") {
         document.getElementById("forecast_value_" + counter).textContent =
           forecast_data[i].main.temp;
@@ -73,4 +70,8 @@ fetch(apiURLForecast)
         counter = counter + 1;
       }
     }
+
+
+
+    
   });

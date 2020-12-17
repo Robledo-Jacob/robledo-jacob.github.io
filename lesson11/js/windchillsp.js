@@ -1,5 +1,5 @@
 const apiURL =
-  "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a";
+  "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a";
 
 // The formula to calculate the wind chill factor is 
 // LaTeX: f=35.74+0.6215\:t-35.75\:s^{0.16}+0.4275\:t\:s^{0.16} f = 35.74 + 0.6215 t − 35.75 s 0.16 + 0.4275 t s 0.16 , 
@@ -44,19 +44,16 @@ fetch(apiURL)
   });
 
 const apiURLForecast =
-  "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a";
+  "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=80ade633c3150127b8188f51cb8e0b1a";
 fetch(apiURLForecast)
   .then(response => response.json())
   .then(jsObject => {
     let forecast_data = jsObject.list;
-   
+    let dt_txts_value = [];
     let counter = 1;
-
-    let daynames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-    let day = daynames[date.getDay()];
     for (let i = 0; i < forecast_data.length; i++) {
       let dt_txts = forecast_data[i].dt_txt.split(" ");
-      document.getElementById('day' + count).textContent = day;
+
       if (dt_txts[1] == "18:00:00") {
         document.getElementById("forecast_value_" + counter).textContent =
           forecast_data[i].main.temp;
@@ -73,4 +70,8 @@ fetch(apiURLForecast)
         counter = counter + 1;
       }
     }
+
+
+
+    
   });
